@@ -1,0 +1,406 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.intro h2 {
+  font-size: 3rem;
+  color: #407bff;
+}
+
+.intro h3 {
+  font-size: 2.5rem;
+  color: #f5cc33;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333; /* Dark text color for contrast */
+}
+
+.progress-bar {
+  background-color: #ffc107; /* Custom yellow color for progress bars */
+}
+
+.progress {
+  height: 20px;
+  border-radius: 10px;
+}
+
+h5 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/*sevice*/
+section.services {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 100px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 50px;
+}
+
+.section-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .glass {
+  position: relative;
+  width: 180px;
+  height: 200px;
+  background: linear-gradient(#fff2, transparent);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 10px;
+  margin: 0 -45px;
+  backdrop-filter: blur(10px);
+  transform: rotate(calc(var(--r) * 1deg));
+}
+
+.container:hover .glass {
+  transform: rotate(0deg);
+  margin: 0 10px;
+}
+
+.container .glass::before {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: #c0c0c0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.container .glass svg {
+  font-size: 2.5em;
+  fill: #c0c0c0;
+}
+
+.experience-section {
+  text-align: center;
+  padding: 20px 0;
+  padding: 20px;
+}
+
+.experience-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.experience-section p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.experience-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.experience-box {
+  background-color: #e0e0e0e2;
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experience-box img {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.experience-box h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.experience-box p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* organisasi */
+.Organization-section {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+.Organization-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.Organization-section p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.Organization-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Organization-section .card-container {
+  display: flex; /* Changed to flexbox for horizontal alignment */
+  gap: 20px; /* Space between the cards */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 280px;
+  width: 200px;
+  background-color: #407bff;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #00000044;
+  margin-left: -80px;
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.card:not(:first-child) {
+  margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+  text-shadow: 2px 2px 8px #6e5b94;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transform: rotateX(-15deg) rotateY(10deg);
+  transition: 0.4s ease-out;
+}
+
+.title-1 {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 800;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.org-btn {
+  position: absolute;
+  top: 195px;
+  margin: 0 20px;
+  width: 120px;
+  height: 32px;
+  border-radius: 8px;
+  border: none;
+  background-color: #4a2f7c;
+  color: #fff;
+  transition: 0.4s ease-out;
+}
+
+.org-btn:hover {
+  transition: 0.4s ease-out;
+  background-color: #4a2f7c;
+  color: #ffffff;
+  box-shadow: 0px 0px 20px rgba(157, 71, 255, 0.5),
+    0px 5px 5px -1px rgba(163, 58, 233, 0.25),
+    inset 4px 4px 8px rgba(219, 175, 255, 0.5),
+    inset -4px -4px 8px rgba(137, 19, 216, 0.35);
+}
+
+.bar {
+  position: relative;
+  top: 250px;
+  height: 5px;
+  width: 100%;
+}
+
+.emptybar {
+  background-color: #201c29;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: #d059ff;
+  background: linear-gradient(90deg, #6831cfab, #a777ff 100%);
+  transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar {
+  width: 100%;
+  transition: 0.4s ease-out;
+}
+
+.content {
+  position: absolute;
+  padding: 20px;
+  top: 60px;
+  color: #eae0fd;
+  font-size: 0.7rem;
+}
+
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+.card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+
+
+.Organization-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #f5cc33; 
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    border: 5px solid #007bff; 
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.footer-nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.footer-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.footer-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.back-to-top button {
+    background-color: #f5cc33;
+    color: #007bff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-top button:hover {
+    background-color: #ffc107; 
+}
+
+.footer-bottom {
+    background-color: #f5cc33; 
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    color: #fff;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.footer-brand {
+    font-weight: bold;
+    color: #fff;
+}
